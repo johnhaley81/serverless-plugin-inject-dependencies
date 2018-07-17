@@ -28,7 +28,6 @@
   "homepage": "https://github.com/e-e-e/serverless-plugin-inject-dependencies#readme",
   "dependencies": {
     "dependency-tree": "^5.12.0",
-    "eslint-config-loanmarket-base": "^1.0.5",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
