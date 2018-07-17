@@ -11,7 +11,7 @@ function resolveToBaseModuleGlob(file) {
   const relative = path.relative(process.cwd(), file);
   const match = relative.match(/^((\.\.\/)*node_modules\/\S+?\/)/);
   if (match) {
-    return `${match[1]}**`;
+    return `${match[1]}**/*.js*`;
   }
   return relative;
 }
