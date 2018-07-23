@@ -10,7 +10,7 @@ function getHandlerFilePath(servicePath, handler) {
 function resolveToBaseModuleGlob(file) {
   const relative = path.relative(process.cwd(), file);
   const match = relative.match(/^((\.\.\/)*node_modules\/\S+?\/)/);
-  if (match) {
+  if (match && !match[1].endsWith('aws-sdk')) {
     return `${match[1]}**`;
   }
   return relative;
